@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        h1, h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        .nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .nav ul li {
+            margin: 0 15px;
+        }
+        .nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 400;
+        }
+        .container {
+            display: flex;
+            max-width: 800px;
+            width: 100%;
+            margin: 60px auto 0;
+            position: relative;
+        }
+        .sidebar {
+            width: 150px;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .social-links a {
+            text-decoration: none;
+            color: #333;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .social-links i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+        .intro {
+            text-align: left;
+        }
+        .intro h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        p {
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="sidebar">
+            <img src="https://fuzguo.github.io/pic.png" alt="Your Image" class="profile-image">
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i>Email</a>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="intro">
+                <h1>Fuzheng Guo</h1>
+                <h2 id="about">About Me</h2>
+                <p>I am currently a student at Shandong University, enrolled in 2022. My current GPA is 93.51 (ranking 1st out of 103 students), and I have completed four-fifths of the required credits for graduation. My expected graduation year is 2026. My main interest lies in the field of Deep Learning and Machine Learning.</p>
+                <p>For more details, please check my <a href="#">CV</a> and <a href="https://fuzguo.github.io/transcript.pdf">transcript</a>.</p>
+                
+                <h2 id="skills">Skills</h2>
+                <p>List your main skills and expertise, such as: Web Development, Artificial Intelligence, Data Analysis, etc.</p>
+                
+                <h2 id="projects">Project Experience</h2>
+                <p>Briefly describe important projects you've participated in or achievements you've made.</p>
+                
+                <h2 id="education">Education</h2>
+                <p>Shandong University 2022-present</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
