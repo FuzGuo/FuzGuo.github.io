@@ -12,6 +12,9 @@
             margin: 0;
             padding: 0;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         h1, h2 {
             font-family: 'Montserrat', sans-serif;
@@ -47,6 +50,7 @@
             width: 100%;
             margin: 60px auto 0;
             position: relative;
+            flex-grow: 1;
         }
         .sidebar {
             width: 150px;
@@ -96,6 +100,13 @@
         p {
             font-weight: 300;
         }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
     </style>
 </head>
 <body>
@@ -127,7 +138,6 @@
 
                 <p>I've put together a <a href="#">CV</a> and my <a href="https://fuzguo.github.io/transcript.pdf">transcript</a> is available too, if you'd like to know more about my academic journey. I'm always open to feedback and new opportunities to learn and grow!</p>
 
-                
                 <h2 id="skills">Skills</h2>
                 <p>List your main skills and expertise, such as: Web Development, Artificial Intelligence, Data Analysis, etc.</p>
                 
@@ -139,5 +149,9 @@
             </div>
         </div>
     </div>
+
+    <footer>
+        <p>Last updated: Aug 2024 | This website is made by Fuzheng Guo</p>
+    </footer>
 </body>
 </html>
