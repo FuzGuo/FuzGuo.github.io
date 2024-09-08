@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -16,10 +19,13 @@
             flex-direction: column;
             min-height: 100vh;
         }
-        h1, h2 {
+
+        h1,
+        h2 {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
         }
+
         .nav {
             background-color: #333;
             color: white;
@@ -29,6 +35,7 @@
             width: 100%;
             z-index: 1000;
         }
+
         .nav ul {
             list-style-type: none;
             padding: 0;
@@ -36,14 +43,17 @@
             display: flex;
             justify-content: center;
         }
+
         .nav ul li {
             margin: 0 15px;
         }
+
         .nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: 400;
         }
+
         .container {
             display: flex;
             max-width: 800px;
@@ -52,6 +62,7 @@
             position: relative;
             flex-grow: 1;
         }
+
         .sidebar {
             width: 150px;
             padding: 20px;
@@ -60,11 +71,13 @@
             flex-direction: column;
             align-items: center;
         }
+
         .main-content {
             flex-grow: 1;
             padding: 20px;
             box-sizing: border-box;
         }
+
         .profile-image {
             width: 100px;
             height: 100px;
@@ -72,11 +85,13 @@
             object-fit: cover;
             margin-bottom: 20px;
         }
+
         .social-links {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
         }
+
         .social-links a {
             text-decoration: none;
             color: #333;
@@ -84,22 +99,62 @@
             display: flex;
             align-items: center;
         }
+
         .social-links i {
             margin-right: 10px;
             width: 20px;
             text-align: center;
         }
+
         .intro {
             text-align: left;
         }
+
         .intro h2 {
             margin-top: 20px;
             margin-bottom: 10px;
             color: #2c3e50;
         }
+
         p {
             font-weight: 300;
         }
+
+        .education {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .education-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .education-left {
+            flex: 1;
+        }
+
+        .education-right {
+            flex: 0 0 150px;
+            text-align: right;
+        }
+
+        .education-item p {
+            margin: 5px 0;
+           
+        }
+
+        .education-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+           
+        }
+
+
         footer {
             background-color: #333;
             color: white;
@@ -109,6 +164,7 @@
         }
     </style>
 </head>
+
 <body>
     <nav class="nav">
         <ul>
@@ -132,11 +188,37 @@
             <div class="intro">
                 <h1>Fuzheng Guo</h1>
                 <h2 id="about">About Me</h2>
-                <p>Hello there! I'm currently a passionate student at Shandong University, having started my journey here in 2022. I've been fortunate enough to maintain a GPA of 93.51/100, which has placed me at the top of my class of 103 students. I'm proud of this achievement, but I know there's always room for growth and learning. I've completed about four-fifths of my required credits and am looking forward to graduating in 2026.</p>
+                <p>Hello there! I'm currently a passionate student at Shandong University, having started my journey
+                    here in 2022. I've been fortunate enough to maintain a GPA of 93.51/100, which has placed me at the
+                    top of my class of 103 students. I'm proud of this achievement, but I know there's always room for
+                    growth and learning. I've completed about four-fifths of my required credits and am looking forward
+                    to graduating in 2026.</p>
 
-                <p>I've put together a <a href="https://FuzGuo.github.io/cv.pdf">CV</a> and my <a href="https://fuzguo.github.io/transcript.pdf">transcript</a> is available too, if you'd like to know more about my academic journey. I'm always open to feedback and new opportunities to learn and grow!</p>
+                <p>I've put together a <a href="https://FuzGuo.github.io/cv.pdf">CV</a> and my <a
+                        href="https://fuzguo.github.io/transcript.pdf">transcript</a> is available too, if you'd like to
+                    know more about my academic journey. I'm always open to feedback and new opportunities to learn and
+                    grow!</p>
 
-                
+
+
+                <h2 id="education">Education</h2>
+                <div class="education">
+                    <div class="education-item">
+                        <div class="education-left">
+                            <p><strong>Shandong University</strong></p>
+                            <p>Major: Computer Science and Technology</p>
+                            <p>Achievements: Maintained a GPA of 93.51/100, top of class</p>
+                        </div>
+                        <div class="education-right">
+                            <p>Sep 2022 - Present</p>
+                        </div>
+                    </div>
+                </div>
+                <h2 id="skills">Skills</h2>
+                <ul>
+                    <li>Programming Languages: Python, JavaScript, C++</li>
+                    <li>Web Development: HTML, CSS, React</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -145,4 +227,5 @@
         <p>Last updated: Aug 2024 | This website is made by Fuzheng Guo</p>
     </footer>
 </body>
+
 </html>
